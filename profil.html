@@ -44,8 +44,8 @@
 							<h6 class="text-muted">Prospect</h6>
 						</div>
 						</a>
-						<div class="dropdown-menu dropdown-menu-right" style="margin-right: 1.5rem;" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#"><em class="fa fa-user-circle mr-1"></em> Voir Profile</a>
-						     <a class="dropdown-item" href="#"><em class="fa fa-sliders mr-1"></em> Préferences</a>
+						<div class="dropdown-menu dropdown-menu-right" style="margin-right: 1.5rem;" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#"><em class="fa fa-user-circle mr-1"></em> Voir Profil</a>
+						     <a class="dropdown-item" href="#"><em class="fa fa-sliders mr-1"></em> Paramètres</a>
 						     <a class="dropdown-item" href="#"><em class="fa fa-power-off mr-1"></em> Déconnexion</a></div>
 					</div>
 					<div class="clear"></div>
@@ -56,17 +56,16 @@
 							<div class="row">
 								<div class="col-md-12">
 									<ul id="tabsJustified" class="nav nav-tabs">
-										<li class="nav-item"><a href="" data-target="#identité" data-toggle="tab" class="nav-link small text-uppercase active">Informations personnelles</a></li>
-										<li class="nav-item"><a href="" data-target="#résidence" data-toggle="tab" class="nav-link small text-uppercase">Coordonnées</a></li>
-										<li class="nav-item"><a href="" data-target="#situation" data-toggle="tab" class="nav-link small text-uppercase">Situation et Revenus</a></li>
-										
+										<li class="nav-item col-md-6"><a href="" data-target="#vous" data-toggle="tab" class="nav-link small text-uppercase active">Parlons de moi</a></li>
+										<li class="nav-item col-md-6"><a href="" data-target="#banque" data-toggle="tab" class="nav-link small text-uppercase">Parlons banque</a></li>
+																	
 									</ul>
 									<br>
 									<div id="tabsJustifiedContent" class="tab-content">
-										<div id="identité" class="tab-pane fade active show">
+										<div id="vous" class="tab-pane fade active show">
 											<form class="form" action="#">
 												<div class="form-group row">
-													<h3 class="float-left text-center text-md-left">Naissance</h3>
+													<h3 class="float-left text-center text-md-left">Mon identité</h3>
 												</div>
 													<div class="form-group row">
 														<label class="col-md-2 col-form-label">Civilité</label>
@@ -81,7 +80,6 @@
 														<input type="text" name="regular" class="form-control">
 													</div>
 													</div>
-												</div>
 												<div class="form-group row">
 													<label class="col-md-2 col-form-label">Prénom</label>
 													<div class="col-md-4">
@@ -93,7 +91,6 @@
 													</div>
 													
 												</div>
-											</div>
 												<div class="form-group row">
 													<label class="col-md-2 col-form-label">Ville de naissance</label>
 													<div class="col-md-4">
@@ -104,9 +101,7 @@
 														<input type="text" name="regular" class="form-control">
 													</div>
 												</div>
-													<div class="form-group row">
-													<h3 class="float-left text-center text-md-left">Pièce d'identité</h3>
-												</div>
+													
 												<div class="form-group row">
 													<label class="col-md-2 col-form-label">Nationalité</label>
 													<div class="col-md-4">
@@ -117,7 +112,7 @@
 													<select class="custom-select form-control">
 														<option value="1">CIN</option>
 														<option value="2">Passeport</option>
-														<option value="2">Carte de Séjour</option>
+														<option value="2">Titre de Séjour</option>
 													</select>
 												</div>
 												</div>
@@ -126,28 +121,14 @@
 													<div class="col-md-4">
 														<input type="text" name="regular" class="form-control">
 													</div>
-													<label class="col-md-2 col-form-label">Lieu de délivrance</label>
-													<div class="col-md-4">
-														<input type="text" name="regular" class="form-control">												
-																	
-												</div>
-														<div class="form-group row">
-												<label class="col-md-2 col-form-label">Date de délivrance</label>
-													<div class="col-md-4">
-														<input type="text" name="regular" class="form-control">
-													</div>
 													<label class="col-md-2 col-form-label">Date d'expiration</label>
 													<div class="col-md-4">
-														<input type="text" name="regular" class="form-control">
-													</div>
+														<input type="text" name="regular" class="form-control">										
 												</div>
 
-											</form>
-										</div>
-									</form>
-								</div>
-										<div id="résidence" class="tab-pane fade">
-											<form class="form" action="#">
+												<div class="form-group row">
+													<h3 class="float-left text-center text-md-left">Mes coordonnées</h3>
+												</div>
 												<div class="form-group row">
 													<label class="col-md-2 col-form-label">Adresse</label>
 													<div class="col-md-4">
@@ -178,9 +159,19 @@
 														<input type="text" name="regular" class="form-control">
 													</div>
 												</div>
-												</form>
+												
+
+											</form>
 										</div>
-										<div id="situation" class="tab-pane fade">
+									</form>
+								</div>
+										
+									<div id="tabsJustifiedContent" class="tab-content">
+										<div id="banque" class="tab-pane fade">
+											<form class="form" action="#">
+												<div class="form-group row">
+													<h3 class="float-left text-center text-md-left">Ma situation</h3>
+												</div>
 											<div class="row">
 												<div class="col-md-12">
 													<form class="form" action="#">
@@ -190,62 +181,91 @@
 													<select class="custom-select form-control">
 														<option value="1">Célibataire</option>
 														<option value="2">Marié(e)</option>
-														<option value="2">Divorcé(e)</option>
 														</select>
 												</div>
-													<label class="col-md-2 col-form-label">Profession</label>
-													<div class="col-md-4">
-														<input type="text" name="regular" class="form-control">
-													</div>
+													<label class="col-md-2 col-form-label">Secteur d'activité</label>
+												<div class="col-md-4">
+													<select class="custom-select form-control">
+														<option value="1">Agriculture</option>
+														<option value="2">Agroalimentaire</option>
+														<option value="3">Audit/Gestion</option>
+														<option value="4">Automobile</option>
+														<option value="5">BTP</option>
+														<option value="6">Chimie/Pharmacie</option>
+														<option value="6">Culture/Artisanat d'art</option>
+														<option value="7">Enseignement</option>
+														<option value="8">Grande Distribution</option>
+														<option value="8">Hôtellerie/Restauration</option>
+														<option value="9">Marié(e)</option>
+														<option value="9">Logistique/Transport</option>
+														<option value="10">Maintenance, entretien</option>
+														<option value="11">NTIC</option>
+														<option value="12">Santé</option>
+
+
+														</select>
+												</div>
 												</div>
 												<div class="form-group row">
 													<label class="col-md-2 col-form-label">Type de revenus</label>
 												<div class="col-md-4">
 													<select class="custom-select form-control">
 														<option value="1">Salaire</option>
-														<option value="2">Honoraire</option>
-														<option value="3">Revenu mobilier</option>
+														<option value="2">Pension</option>
+														<option value="3">Retraite</option>
+														<option value="4">Revenus professionnels</option>
+														<option value="5">Revenus fonciers</option>
 														</select>
 												</div>
-													<label class="col-md-2 col-form-label">Périodicité</label>
+												<label class="col-md-2 col-form-label">Revenu mensuel</label>
+													<div class="col-md-4">
+														<input type="text" name="regular" class="form-control">
+													</div>
+												</div>
+							<button type="button" class="btn btn-md btn-primary float-right">Enregistrer mon profil</button>
+												<div class="form-group row">
+													<h3 class="float-left text-center text-md-left">Mes besoins</h3>
+												</div>
+												<label class="col-md-2 col-form-label">Avez-vous déjà un compte bancaire?</label>
 												<div class="col-md-4">
 													<select class="custom-select form-control">
-														<option value="1">Mensuelle</option>
-														<option value="2">Annuelle</option>
-														
+														<option value="1">Non</option>
+														<option value="2">Société Générale Maroc</option>
+														<option value="3">Attijariwafa bank</option>
+														<option value="4">Banque populaire</option>
+														<option value="5">BMCE Bank</option>
+														<option value="6">BMCI</option>
+														<option value="7">Crédit agricole du Maroc</option>
+														<option value="8">Crédit du Maroc</option>
+														<option value="9">CIH Bank</option>
+														<option value="9">CFG Bank</option>
 														</select>
 												</div>
 												</div>
 												<div class="form-group row">
-													<label class="col-md-2 col-form-label">Tranches de revenus</label>
+													<label class="col-md-2 col-form-label">Motivation ouverture de compte</label>
 												<div class="col-md-4">
 													<select class="custom-select form-control">
-														<option value="1">moins de 7 500 MAD</option>
-														<option value="2">de 7 500 à 12 500 MAD</option>
-														<option value="3">de 12 500 à 17 500 MAD</option>
-														<option value="4">de 17 500 à 25 000 MAD</option>
-														<option value="5">de 25 000 à 40 000 MAD</option>
-														<option value="6">de 40 000 à 75 000 MAD</option>
-														<option value="7">plus de 75 000 MAD</option>
-														
-														
-														</select>
+														<option value="1">Domiciliation de revenus</option>
+														<option value="2">Mobilité bancaire</option>
+														<option value="3">Deuxième compte</option>
+														<option value="4">Autre</option>
+													</select>
 												</div>
-													<label class="col-md-2 col-form-label">Default input field</label>
-													<div class="col-md-4">
-														<input type="text" name="regular" class="form-control">
-													</div>
+
+												<label class="col-md-2 col-form-label">Principales opérations</label>
+												<div class="col-md-4">
+													<select class="custom-select form-control">
+														<option value="1">Retraits et versements en espèce</option>
+														<option value="2">Somme à disposition</option>
+														<option value="3">Emission et réception de virements</option>
+														<option value="3">Remise et paiement de chèques</option>
+														<option value="4">Autres</option>
+													</select>
 												</div>
-												<div class="form-group row">
-													<label class="col-md-2 col-form-label">fefefe</label>
-													<div class="col-md-4">
-														<input type="text" name="regular" class="form-control">
-													</div>
-													<label class="col-md-2 col-form-label">Default input field</label>
-													<div class="col-md-4">
-														<input type="text" name="regular" class="form-control">
-													</div>
+													
 												</div>
+											
 													</form>
 												</div>
 											</div>
