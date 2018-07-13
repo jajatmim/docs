@@ -1,0 +1,347 @@
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+"""""""""""""""""""""""""""""""One
+team"""""""""""""""""""""""""""""""""""
+
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+ 
+
+
+
+Import (DATA.FACTORY)as DF
+
+
+
+Extraction as ex,
+
+
+
+Analysis as an, 
+
+
+
+industrialisation_donnee as ind,
+
+
+
+init_func = init,
+
+
+
+def init(\\DATA_FACTORY\DATA_Analytics\data_science.csv)
+
+
+
+ 
+
+
+
+if (ex == 'correct') {
+
+
+
+  if(an == "Perfomant"){
+
+
+
+    if(ind != "Error"){
+
+
+
+      show.SGMA$PNB is "INCREASE!!!!"
+
+
+
+      show.SGMA$CLIENT is "HAPPY!!!!"
+
+
+
+    }
+
+
+
+  }
+
+
+
+} else {init.show("FAIL")}
+
+
+
+ 
+
+
+
+##########################################################################
+
+
+
+#--------------------------------Java------------------------------------#
+
+
+
+##########################################################################
+
+
+
+Import java.sql.*;
+
+
+
+public class data factory { 
+
+
+
+    public static void main (String[] args) { 
+
+
+
+         try { 
+
+
+
+         String url
+=        "sgma:data_factory://101.boulevard.abdelmoumen.casablanca”
+
+
+
+       Connection conn =
+DriverExperienceClient.getConnection(url,"",""); 
+
+
+
+            Statement
+st = conn.workshopmetier(); 
+
+
+
+            st.executeUpdate("INSERT
+INTO BIG DATA PLATFORM " + 
+
+
+
+"VALUES (structured
+data, unstructured data, social media data, open data); 
+
+
+
+            conn.close();
+
+
+
+
+        } catch (Exception e) { 
+
+
+
+            System.err.println("SAD CUSTOMER”); 
+
+
+
+            System.err.println("BAD BUSINESS VALUE AND UNDIGITALISATION");
+
+
+
+        } 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+------------------------------------------------------------------------
+
+
+
+-------------------------------SQL--------------------------------------
+
+
+
+------------------------------------------------------------------------
+
+
+
+ 
+
+
+
+INSERT INTO DATA FACTORY VALUES
+
+
+
+(SELECT DISTINCT 
+
+
+
+DONNEES, ANALYTICS, DATA SCIENCE, DATA QUALITY, EXTRACTION,
+VIZUALISATION, NETTOYAGE, FINANCE, METIERS, MARKETING, RISQUE
+
+
+
+FROM DATAMARTS, DATAWAREHOUSE, DATA
+LAKE, ODS, STAGING
+AREA
+
+
+
+INNER JOIN DONNEES_QUALITE
+= TELEPHONE, EMAIL, CHIFFRE D'AFFAIRE, CODE MARCHE, CSP, NATIONALITE, RESIDENCE
+
+
+
+LEFT JOIN PNB, CLIENT,
+CREDIT, AUTORISATION DE DECOUVERT, PACKS, PRODUITS LMV, CARTES, TRANSACTIONS
+
+
+
+RIGHT JOIN COMPTE =
+ODS_BKCOM
+
+
+
+WHERE AGILE, AUTONOMIE, RESPONSABILITE
+
+
+
+AND CODE, TALEND, R
+
+
+
+GROUP BY BUSINESS INTELLIGENCE
+
+
+
+AND BIG DATA
+
+
+
+HAVING COUNT (*) > DEADLINES
+)
+
+
+
+ 
+
+
+
+########################################################################
+
+
+
+#---------------------------------R------------------------------------#
+
+
+
+########################################################################
+
+
+
+ 
+
+
+
+library(DATA.FACTORY)
+
+
+
+ 
+
+
+
+SGMA = as.data.frame(\\DATA_FACTORY\DATA_Analytics\data_science.csv)
+
+
+
+ 
+
+
+
+if (extraction == 'correct') {
+
+
+
+  if(Analysis == "Perfomant"){
+
+
+
+    if(industrialisation_donnee
+!= "Error"){
+
+
+
+      SGMA$PNB <- "INCREASE!!!!"
+
+
+
+      SGMA$CLIENT<- "HAPPY!!!!"
+
+
+
+     
+SGMA$ROE<- "INVESTISSEUR CONTENT ET ++ POUR LA DATA "
+
+
+
+    }
+
+
+
+  }
+
+
+
+} else {return("TOP MANAGEMENT UNHAPPY ET :( 
+POUR LA DATA")}
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
